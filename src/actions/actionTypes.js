@@ -1,0 +1,6 @@
+export const REQUEST_DATA = 'REQUEST_DATA';
+export const RECEIVE_DATA = 'RECEIVE_DATA';
+export const DATE_CHANGED = 'DATE_CHANGED';
+export const QUERY_CHANGED = 'QUERY_CHANGED';
+export const REQUEST_RESULTS = 'REQUEST_RESULTS';
+export const RECEIVE_RESULTS = 'RECEIVE_RESULTS';
