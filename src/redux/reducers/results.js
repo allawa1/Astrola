@@ -3,7 +3,8 @@ import { REQUEST_RESULTS, RECEIVE_RESULTS } from '../../actions/actionTypes';
 function results(
     state = {
         isFetching: false,
-        items: []
+        items: [],
+        
     },
     action
 ) {

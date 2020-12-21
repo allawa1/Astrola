@@ -14,11 +14,15 @@ const AstronomyCard = (props) => {
             <h3 className='astronomy-title'>{title}</h3>
             <a href={hdurl} className='astronomy-image-wrapper'>
                 {media_type === "image" ? (
+                    
+                    
                     <img id="potd_img"
                         src={url}
                         alt={title}
                         className="photo"
-                    />
+                    />        
+                    
+                    
                 ) : (
                         <iframe
                             title="space-video"
@@ -31,6 +35,7 @@ const AstronomyCard = (props) => {
                             allowFullScreen
                             className="photo"
                         />
+                        
                 )}
                 </a> 
             <p>{explanation}</p>
