@@ -1,6 +1,6 @@
 import React from 'react';
 import { ThemeProvider, createTheme, Arwes, Header} from 'arwes';
-import background from '/galaxy-background.jpg'
+import background from './galaxy-background.jpg'
 import Landing from './components/landing'
 import { Route, Switch, Link} from 'react-router-dom';
 import Search from './components/search'
