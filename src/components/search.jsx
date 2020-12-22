@@ -21,22 +21,24 @@ const Search =() => {
 
         const timeout = setTimeout(() => {
             dispatch(queryChanged(value));
-        }, 500);
+        }, 3000);
 
         setDebounceTimout(timeout);
     };
 
     return ( 
-        <div >
+        <div>
+        <div className="search" >
         <input
+            className="search-bar"
             placeholder="Search NASA's media API"
             value={query}
             onChange={handleChange}
         />
-        <div className="view">
+        </div>
             <Results/>
-            </div>
-            </div>
+
+        </div>
     );
 }
 

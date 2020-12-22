@@ -5,20 +5,26 @@ import Landing from './components/landing'
 import { Route, Switch, Link} from 'react-router-dom';
 import Search from './components/search'
 import Highlight from 'arwes/lib/Highlight';
-
 const style = { display: 'inline-block' };
 
-const App = () => (
+const App = () => {
+
+
+
+  return (
   <div>
   <ThemeProvider theme={createTheme()}>
   <Arwes animate show background={background}>
   <Header animate>
-                <h1 style={{ margin: 0 }}>Pic Of the Day </h1>
+                <h1 style={{ margin: 0 }}>Astrola </h1>
                 <Highlight style={style}>
-                  <Link to="/">Home</Link></Highlight>
+                  <ul className="nav-list">
+                  <li><Link to="/">Home</Link></li>
                 < div className="navs">
-                <Link to="/search">Search</Link>
+                <li><Link to="/search">Search</Link></li>
                 </div>
+                </ul>
+                </Highlight>
   </Header>
   <main>
     <Switch>
@@ -29,6 +35,8 @@ const App = () => (
     </Arwes>
   </ThemeProvider>
   </div>
-);
+
+)};
+
 
 export default App;

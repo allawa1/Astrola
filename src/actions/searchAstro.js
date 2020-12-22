@@ -21,7 +21,7 @@ export function fetchResults(query) {
 
         return axios
             .get(
-                `https://images-api.nasa.gov/search?q=${query}`
+                `https://images-api.nasa.gov/search?q=${query}&media_type=image`
             )
             .then(res => {
                 dispatch(receiveResults(res.data))

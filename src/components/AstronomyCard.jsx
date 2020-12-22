@@ -1,14 +1,17 @@
 import React from 'react';
 import useFetchData from '../hooks/useFetchData';
+import { Words} from 'arwes';
 
 
 const AstronomyCard = (props) => {
+
 
     useFetchData();
     //console.log(dataReducer)
     const { title, media_type , hdurl, url, explanation, date, copyright} = props.data;
 
     return (
+
         <div className='astronomy-card'>
             <div className="potd">
             <h3 className='astronomy-title'>{title}</h3>
@@ -33,12 +36,13 @@ const AstronomyCard = (props) => {
                         />
                 )}
                 </a> 
-            <p>{explanation}</p>
+            <players><Words animate>{explanation}</Words></players>
             <span>{date} <br/>{copyright} </span>
             </div>
             
         {/* })} */}
 </div>
+
 );
 }
 
